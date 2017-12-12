@@ -1,0 +1,15 @@
+/*
+  Happy Mandarin audio Style Sheet
+  Filename: astyle.css
+
+  Author: Ruixian Shan
+  Date: 12/5/2017
+
+  Supporting Files: None
+*/
+
+/* audio style */
+audio, object, embed {
+  display: block;
+  margin: 15px auto;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      Happy Mandarin Website
+      Filename: formResult.html
+
+      Author: Ruixian Shan
+      Date: 12/5/2017
+
+      Supporting Files: Assets/Styles/main.css
+                        Assets/Images/happymandarin.jpg
+                        Assets/Images/background.jpg
+    -->
+    <meta charset="utf-8">
+    <title>Form Summary</title>
+    <link href="Assets/Styles/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <img src="Assets/Images/happymandarin.jpg" width="800" height="150" alt="Happy Mandarin" />
+    </header>
+    <nav class="horizontal">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="mandarinBasics.html">Basics of Mandarin</a></li>
+        <li><a href="programs.html">Specific Programs</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+      <section id="main">
+        <h1>Form Summary</h1>
+        <p>Your form has been submitted and you entered the following data:</p>
+
+               <script>
+                   var formData = location.search;
+                   formData = formData.substring(1, formData.length);
+                   while (formData.indexOf("+") !== -1) {
+                      formData = formData.replace("+", " ");
+                   }
+                   formData = decodeURIComponent(formData);
+                   var formArray = formData.split("&");
+                   for (var i = 0; i < formArray.length; i = i + 1) {
+                      document.write("<p>" + formArray[i] + "</p>");
+                   }
+               </script>
+        <br/>
+        <br/>
+      </section>
+      <footer>
+        <address>
+          Happy Mandarin &#183;
+          Saint Louis, MO &#183;
+          (314) 556 - 2411 &#183;
+          shanruixian@gmail.com
+        </address>
+      </footer>
+  </body>
+</html>

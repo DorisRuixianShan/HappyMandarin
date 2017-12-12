@@ -1,0 +1,28 @@
+/*
+  Happy Mandarin table Style Sheet
+  Filename: tstyle.css
+
+  Author: Ruixian Shan
+  Date: 12/5/2017
+
+  Supporting Files: None
+*/
+
+/* table style */
+table {
+  font-size: 14px;
+  border-collapse: collapse;
+  border: 5px outset black;
+  margin-left: 10px;
+  width: 400px;
+}
+
+th, td {
+  border: 1px solid black;
+  vertical-align: top;
+  padding: 5px;
+}
+
+thead {
+  font-weight: bold;
+}
