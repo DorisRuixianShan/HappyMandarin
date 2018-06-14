@@ -23,6 +23,14 @@ body {
   width: 800px;
 }
 
+.fullscreen {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  left: 0;
+  top: 0;
+}
+
 body * {
   font-family: Verdana, Geneva, sans-serif;
   font-size: 100%;
